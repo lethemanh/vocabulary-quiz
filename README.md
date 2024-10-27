@@ -48,7 +48,11 @@ This document outlines the system design for a real-time vocabulary quiz applica
 
 This Data Flow Diagram explains how data flows through the system from when a user joins a quiz to when the leaderboard is updated.
 
-<a href="https://ibb.co/qm4fJYK"><img src="https://i.ibb.co/ZcwP2z5/Real-Time-Vocabulary-Quiz-DFD.png" alt="Real-Time-Vocabulary-Quiz-DFD" border="0"></a>
+<a href="https://ibb.co/h8vybQv"><img src="https://i.ibb.co/PC8NKX8/Real-Time-Vocabulary-Quiz-DFD.png" alt="Real-Time-Vocabulary-Quiz-DFD" border="0"></a><br />
+
+This is DB design
+
+<a href="https://ibb.co/qDFKwZ7"><img src="https://i.ibb.co/fXGf7cq/Vocabulary-Quiz-DB-Design.png" alt="Vocabulary-Quiz-DB-Design" border="0"></a>
 
 ---
 
@@ -67,3 +71,9 @@ This Data Flow Diagram explains how data flows through the system from when a us
 --- 
 
 This design ensures scalability, high performance, and real-time responsiveness while providing a clear data flow, resilient architecture, and efficient handling of messages and events.
+
+--
+
+## Record of Presentation
+
+https://drive.google.com/file/d/1iIIJnkCJQ24thEkfRNCXJqklTZsJ8aPL/view?usp=sharing

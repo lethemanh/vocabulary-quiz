@@ -9,14 +9,14 @@ import cors from 'cors';
 
 const app = express();
 
-const server = createServer(app);
-initializeSocket(server);
-
 app.use(cors({
   origin: '*',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
+
+const server = createServer(app);
+initializeSocket(server);
 
 app.use(express.json());
 app.use('/api', apiRoutes);
@@ -25,7 +25,7 @@ app.get('/health', (req, res) => {
   res.send('Hello World!')
 })
 
-app.listen(process.env.PORT, async () => {
+server.listen(process.env.PORT, async () => {
   await initProducer();
   initConsumer(handleTrackingMessage, 'vocabulary-quiz-topic');
 
